@@ -1,6 +1,8 @@
 import asyncio
 from websockets.asyncio.client import connect
-import streamlit
+import streamlit as st
+
+st.title("WebSick Chats")
 
 async def hello():
     async with connect("ws://localhost:8765") as websocket:
